@@ -2,6 +2,7 @@ import { readFile } from 'fs/promises';
 
 export async function readData(path?: string, raw?: true): Promise<string>;
 export async function readData(path?: string, raw?: false): Promise<string[]>;
+export async function readData(path?: string): Promise<string[]>;
 export async function readData(
   path?: string,
   raw?: boolean,
